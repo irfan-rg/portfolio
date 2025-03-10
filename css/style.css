@@ -840,14 +840,14 @@ h2 {
 .skill-item {
     display: flex;
     align-items: center;
-    background-color: var(--bg-skill);
+    background-color: var(--bg-skill-hvr);
     padding: 8px 12px;
     border-radius: 50px;
     transition: background-color 0.2s;
 }
 
 .skill-item:hover {
-    background-color: var(--bg-skill-hvr);
+    background-color: var(--bg-skill);
 }
 
 .skill-item i {
