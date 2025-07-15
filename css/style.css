@@ -10,6 +10,7 @@
     --bg-skill-hvr: #f0f0f0;
     --transition: all 0.3s ease;
     --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --terminal-shadow: 0 8px 25px rgba(0, 0, 0, 0);
 }
 
 /* Dark Theme Variables */
@@ -21,6 +22,7 @@
     --bg-skill: #4b5563;
     --bg-skill-hvr: #4b55637c;
     --shadow: 0 4px 6px -1px rgba(151, 151, 151, 0.1);
+    --terminal-shadow: 0 8px 25px rgba(255, 255, 255, 0.08);
 }
 
 /* Reset & Global Styles */
@@ -171,15 +173,11 @@ h2 {
 }
 
 .mobile-menu-btn.active span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
+    transform: rotate(45deg) translate(3px, 3px);
 }
 
 .mobile-menu-btn.active span:nth-child(2) {
-    opacity: 0;
-}
-
-.mobile-menu-btn.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(7px, -6px);
+    transform: rotate(-45deg) translate(3px, -3px);
 }
 
 /* Mobile menu overlay */
@@ -189,7 +187,9 @@ h2 {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
     z-index: 999;
     opacity: 0;
     visibility: hidden;
@@ -296,6 +296,14 @@ h2 {
         width: 22px;
         height: 2px;
     }
+    
+    .mobile-menu-btn.active span:nth-child(1) {
+        transform: rotate(45deg) translate(2px, 2px);
+    }
+
+    .mobile-menu-btn.active span:nth-child(2) {
+        transform: rotate(-45deg) translate(2px, -2px);
+    }
 }
 
 /* Hero Section */
@@ -335,7 +343,7 @@ h2 {
     height: 100%;
     background: #1e1e1e;
     border-radius: 12px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    box-shadow: var(--terminal-shadow);
     border: 1px solid #333;
     overflow: hidden;
     animation: fadeIn 1s ease-in-out;
