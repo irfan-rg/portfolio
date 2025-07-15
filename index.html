@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio of [Your Name] - Computer Science Student">
     <meta name="keywords" content="computer science, portfolio, software developer, student">
-    <meta property="og:title" content="[Your Name] - Portfolio">
+    <meta property="og:title" content="Mohammed Irfan Gulagundi - Portfolio">
     <meta property="og:description" content="Computer Science Portfolio">
     <meta property="og:image" content="assets/images/preview.jpg">
     
@@ -25,6 +25,7 @@
     
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
@@ -40,17 +41,19 @@
             <!-- <a href="#experience">Experience</a> -->
             <a href="#contact">Contact</a>
         </div>
-        <div>
+        <div class="nav-right">
             <button class="theme-toggle" id="themeToggle">
                 <i class="fas fa-moon"></i>
             </button>
-        </div>
-        <div class="mobile-menu-btn">
-            <span></span>
-            <span></span>
-            <span></span>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </nav>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
@@ -62,7 +65,7 @@
             </div>
             <div class="cta-buttons">
                 <a href="#projects" class="btn primary">View Projects</a>
-                <a href="assets/resume.pdf" class="btn secondary" download>Download CV</a>
+                <a href="assets/irfan-resume.pdf" class="btn secondary" download>Download CV</a>
             </div>
             <div class="social-links">
                 <a href="https://github.com/irfan-rg" target="_blank"><i class="fab fa-github"></i></a>
@@ -71,19 +74,49 @@
             </div>
         </div>
         <div class="hero-image">
-            <!-- <div class="terminal-anim">
+            <div class="terminal-anim">
                 <div class="terminal-window">
                     <div class="terminal-header">
-                        <span class="dot red"></span>
-                        <span class="dot yellow"></span>
-                        <span class="dot green"></span>
+                        <div class="terminal-controls">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="terminal-title">irfan@portfolio</div>
                     </div>
                     <div class="terminal-body">
-                        <p><span class="prompt">irfan@code:~$</span> <span class="typing">run portfolio.js</span></p>
-                        <p class="output glitch" data-text="> Building epic shit...">> Building epic shit...</p>
+                        <div class="terminal-line">
+                            <span class="prompt">irfan@portfolio:~$</span>
+                            <span class="command" id="command1"></span>
+                            <span class="cursor" id="cursor1">▋</span>
+                        </div>
+                        <div class="terminal-line" id="output1" style="display: none;">
+                            <span class="output-text">Initializing portfolio...</span>
+                        </div>
+                        <div class="terminal-line" id="line2" style="display: none;">
+                            <span class="prompt">irfan@portfolio:~$</span>
+                            <span class="command" id="command2"></span>
+                            <span class="cursor" id="cursor2">▋</span>
+                        </div>
+                        <div class="terminal-line" id="output2" style="display: none;">
+                            <span class="output-text success">✓ Loading awesome projects...</span>
+                        </div>
+                        <div class="terminal-line" id="line3" style="display: none;">
+                            <span class="prompt">irfan@portfolio:~$</span>
+                            <span class="command" id="command3"></span>
+                            <span class="cursor" id="cursor3">▋</span>
+                        </div>
+                        <div class="terminal-line" id="output3" style="display: none;">
+                            <span class="output-text success">✓ Ready to showcase skills!</span>
+                        </div>
+                        <div class="terminal-line" id="line4" style="display: none;">
+                            <span class="prompt">irfan@portfolio:~$</span>
+                            <span class="command" id="command4"></span>
+                            <span class="cursor final-cursor">▋</span>
+                        </div>
                     </div>
                 </div>
-            </div> -->
+            </div>
         </div>
     </section>
 
@@ -111,7 +144,7 @@
                     </div>
                     <div class="info-item">
                         <i class="fas fa-location-dot"></i>
-                        <span>Ujire, Karnataka</span>
+                        <span>Dharwad, Karnataka</span>
                     </div>
                 </div>
                 <div class="interests">
@@ -152,6 +185,10 @@
                             <i class="fa-brands fa-python"></i>
                             <span>Python</span>
                         </div>
+                        <div class="skill-item">
+                            <i class="fa-brands fa-js"></i>
+                            <span>TypeScript</span>
+                        </div>
                     </div>
                 </div>
             
@@ -160,11 +197,11 @@
                     <div class="skill-items">
                         <div class="skill-item">
                             <i class="fa-brands fa-html5"></i>
-                            <span>HTML</span>
+                            <span>Html5</span>
                         </div>
                         <div class="skill-item">
                             <i class="fa-brands fa-css3-alt"></i>
-                            <span>CSS</span>
+                            <span>Css3</span>
                         </div>
                         <div class="skill-item">
                             <i class="fa-brands fa-js"></i>
@@ -172,7 +209,7 @@
                         </div>
                         <div class="skill-item">
                             <i class="fa-brands fa-react"></i>
-                            <span>React</span>
+                            <span>React.js</span>
                         </div>
                     </div>
                 </div>
@@ -192,10 +229,10 @@
                 </div>
             </div>
         
-        <!-- Second Row: Databases, Version Control -->
+        <!-- Second Row: Databases, Data Structures & Algorithms, Machine Learning -->
             <div class="skill-row-2">
                 <div class="skill-category">
-                    <h3>Databases</h3>
+                    <h3>Database Management Systems</h3>
                     <div class="skill-items">
                         <div class="skill-item">
                             <i class="fa-solid fa-database"></i>
@@ -208,6 +245,96 @@
                     </div>
                 </div>
             
+                <div class="skill-category">
+                    <h3>Data Structures & Algorithms</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fa-solid fa-code-branch"></i>
+                            <span>Data Structures</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fa-solid fa-project-diagram"></i>
+                            <span>Algorithms</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Machine Learning</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fa-solid fa-brain"></i>
+                            <span>ML Algorithms</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fa-solid fa-chart-line"></i>
+                            <span>Data Analysis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!-- Third Row: Cloud Computing, Operating Systems, Tools -->
+            <div class="skill-row-3">
+                <div class="skill-category">
+                    <h3>Google Cloud Platform</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fa-brands fa-google"></i>
+                            <span>GCP</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fa-solid fa-cloud"></i>
+                            <span>Cloud Computing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Operating Systems</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fa-brands fa-windows"></i>
+                            <span>Windows</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fa-brands fa-linux"></i>
+                            <span>Linux</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Computer Networks</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fa-solid fa-network-wired"></i>
+                            <span>Networking</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fa-solid fa-server"></i>
+                            <span>Protocols</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!-- Fourth Row: Development Tools, Version Control -->
+            <div class="skill-row-4">
+                <div class="skill-category">
+                    <h3>Development Tools</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fa-solid fa-code"></i>
+                            <span>IntelliJ IDEA</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fa-solid fa-code"></i>
+                            <span>VS Code</span>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="skill-category">
                     <h3>Version Control</h3>
                     <div class="skill-items">
@@ -283,9 +410,70 @@
     <section id="projects" class="projects">
         <h2 class="section-title">Projects</h2>
         <div class="project-grid">
+
             <article class="project-card">
                 <div class="project-info">
-                    <h3>Natural Language API Chat Application</h3>
+                    <h3>Merch Store</h3>
+                    <p>This React.js website is a one-of-a-kind birthday treasure, handcrafted as a gift to celebrate my friend in style.
+
+                        Born from late-night coding sessions and a love for building something special, it’s a sleek, luxurious escape. It’s more than a site—it’s a personal digital keepsake designed to wow.</p>
+                    <div class="tech-stack">
+                        
+                        <span><i class="fa-brands fa-react"></i>React.js</span>
+                        <span><i class="fa-solid fa-code"></i>TypeScript</span>
+                        <span><i class="fa-brands fa-css3-alt"></i>Tailwind CSS</span>
+                        <span><i class="fa-solid fa-video"></i>Framer Motion</span>
+                        <span><i class="fa-solid fa-magic"></i>particles.js</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://my-present.vercel.app/" class="btn proj" target="_blank"><i class="fa-solid fa-rss"></i>Live</a>
+                        <a href="https://github.com/irfan-rg/merch" class="btn proj" target="_blank"><i class="fab fa-github"></i>GitHub</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-info">
+                    <h3>F1 Race Winner Predictor 🏁</h3>
+                    <p>This project harnesses machine learning to predict Formula 1 race Winners using Historical Data and Real-Time Qualifying results.
+                        <br>
+                        <br>
+                        It’s built for F1 enthusiasts and data science fans who want to explore predictive analytics in motorsport.</p>
+                    <div class="tech-stack">
+                        <span><i class="fa-brands fa-python"></i>Python</span>
+                        <span><i class="fa-solid fa-database"></i>Database</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/irfan-rg/f1-predictor" class="btn proj" target="_blank"><i class="fa-solid fa-rss"></i>Live</a>
+                        <a href="https://github.com/irfan-rg/f1-predictor" class="btn proj" target="_blank"><i class="fab fa-github"></i>GitHub</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-info">
+                    <h3>Birthday Present</h3>
+                    <p>This React.js website is a one-of-a-kind birthday treasure, handcrafted as a gift to celebrate my friend in style.
+                        <br><br>
+                    It’s more than a site—it’s a personal digital keepsake designed to wow.</p>
+                    <div class="tech-stack">
+                        
+                        <span><i class="fa-brands fa-react"></i>React.js</span>
+                        <span><i class="fa-solid fa-code"></i>TypeScript</span>
+                        <span><i class="fa-brands fa-css3-alt"></i>Tailwind CSS</span>
+                        <span><i class="fa-solid fa-video"></i>Framer Motion</span>
+                        <span><i class="fa-solid fa-magic"></i>particles.js</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://my-present.vercel.app/" class="btn proj" target="_blank"><i class="fa-solid fa-rss"></i>Live</a>
+                        <a href="https://github.com/irfan-rg/present" class="btn proj" target="_blank"><i class="fab fa-github"></i>GitHub</a>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="project-card">
+                <div class="project-info">
+                    <h3>Qube AI - Natural Language API Chat Application</h3>
                     <p>A real-time chat application that leverages Google Cloud Natural Language API to provide intelligent message analysis, including sentiment detection and entity recognition in conversations.</p>
                     <div class="tech-stack">
                         <span><i class="fa-brands fa-html5"></i>HTML</span>
@@ -297,7 +485,7 @@
                     </div>
                     <div class="project-links">
                         <a href="https://qube-gpt.vercel.app/" class="btn proj" target="_blank"><i class="fa-solid fa-rss"></i>Live</a>
-                        <a href="https://github.com/irfan-rg/qube" class="btn proj" target="_blank"><i class="fab fa-github"></i>GitHub</a>
+                        <a href="https://github.com/irfan-rg/qube-ai" class="btn proj" target="_blank"><i class="fab fa-github"></i>GitHub</a>
 
                     </div>
                 </div>
@@ -323,16 +511,16 @@
     
             <article class="project-card">
                 <div class="project-info">
-                    <h3>E-Commerce Dashboard</h3>
-                    <p>A comprehensive admin dashboard for e-commerce platforms featuring real-time analytics, inventory management, and customer insights with intuitive visualization tools.</p>
+                    <h3>Studious</h3>
+                    <p>Studious is an online library platform built for students and admins. Students can browse, search, and manage books, while admins handle the catalog, users, and other admin tasks. It’s made with HTML, CSS, and JavaScript, keeping the vibe clean and easy to use.</p>
                     <div class="tech-stack">
-                        <span>React</span>
-                        <span>Node.js</span>
-                        <span>MongoDB</span>
+                        <span><i class="fa-brands fa-html5"></i>HTML</span>
+                        <span><i class="fa-brands fa-css3-alt"></i>CSS</span>
+                        <span><i class="fa-brands fa-js"></i>JavaScript</span>
                     </div>
                     <div class="project-links">
-                        <a href="#" class="btn proj" target="_blank"><i class="fa-solid fa-rss"></i>Live </a>
-                        <a href="#" class="btn proj" target="_blank"><i class="fab fa-github"></i>GitHub</a>
+                        <a href="https://github.com/irfan-rg/studious" class="btn proj" target="_blank"><i class="fa-solid fa-rss"></i>Live </a>
+                        <a href="https://github.com/irfan-rg/studious" class="btn proj" target="_blank"><i class="fab fa-github"></i>GitHub</a>
                     </div>
                 </div>
             </article>
