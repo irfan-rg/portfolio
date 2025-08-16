@@ -65,7 +65,10 @@ function startTerminalAnimation() {
         { text: "npm start", delay: 1000 },
         { text: "git status", delay: 3000 },
         { text: "ls -la", delay: 5500 },
-        { text: "echo 'Welcome to my portfolio!'", delay: 8000 }
+        { 
+            text: "echo", 
+            delay: 8000 
+        }
     ];
 
     let currentCommand = 0;
@@ -114,7 +117,7 @@ function startTerminalAnimation() {
         await typeCommand(commands[0].text, 'command1', 'cursor1', 'output1', 'line2');
         await typeCommand(commands[1].text, 'command2', 'cursor2', 'output2', 'line3');
         await typeCommand(commands[2].text, 'command3', 'cursor3', 'output3', 'line4');
-        await typeCommand(commands[3].text, 'command4', '.final-cursor', null, null);
+        await typeCommand(commands[3].text, 'command4', 'cursor4', 'output4', 'line5');
     }, 1500);
 }
 

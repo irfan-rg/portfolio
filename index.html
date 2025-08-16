@@ -112,8 +112,16 @@
                         <div class="terminal-line" id="line4" style="display: none;">
                             <span class="prompt">irfan@portfolio:~$</span>
                             <span class="command" id="command4"></span>
-                            <span class="cursor final-cursor">▋</span>
+                            <span class="cursor" id="cursor4">▋</span>
                         </div>
+                        <div class="terminal-line" id="output4" style="display: none;">
+                            <span class="output-text">Welcome to my profile!</span>
+                        </div>
+                        <!-- <div class="terminal-line" id="line5" style="display: none;">
+                            <span class="prompt">irfan@portfolio:~$</span>
+                            <span class="command" id="command5"></span>
+                            <span class="cursor final-cursor">▋</span>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -277,15 +285,15 @@
         <!-- Third Row: Cloud Computing, Operating Systems, Tools -->
             <div class="skill-row-3">
                 <div class="skill-category">
-                    <h3>Google Cloud Platform</h3>
+                    <h3>Cloud Platform</h3>
                     <div class="skill-items">
                         <div class="skill-item">
-                            <i class="fa-brands fa-google"></i>
-                            <span>GCP</span>
+                            <i class="fa-brands fa-aws"></i>
+                            <span>Amazon Web Services</span>
                         </div>
                         <div class="skill-item">
-                            <i class="fa-solid fa-cloud"></i>
-                            <span>Cloud Computing</span>
+                            <i class="fab fa-google"></i>
+                            <span>Google Cloud Computing</span>
                         </div>
                     </div>
                 </div>
@@ -301,6 +309,10 @@
                             <i class="fa-brands fa-linux"></i>
                             <span>Linux</span>
                         </div>
+                        <div class="skill-item">
+                            <i class="fa-brands fa-ubuntu"></i>
+                            <span>Ubuntu</span>
+                        </div>
                     </div>
                 </div>
 
@@ -314,6 +326,10 @@
                         <div class="skill-item">
                             <i class="fa-solid fa-server"></i>
                             <span>Protocols</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fa-solid fa-globe"></i>
+                            <span>TCP/IP</span>
                         </div>
                     </div>
                 </div>
@@ -331,6 +347,14 @@
                         <div class="skill-item">
                             <i class="fa-solid fa-code"></i>
                             <span>VS Code</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fa-solid fa-code"></i>
+                            <span>PyCharm</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fa-solid fa-code"></i>
+                            <span>Cursor</span>
                         </div>
                     </div>
                 </div>
@@ -413,21 +437,27 @@
 
             <article class="project-card">
                 <div class="project-info">
-                    <h3>Merch Store</h3>
-                    <p>This React.js website is a one-of-a-kind birthday treasure, handcrafted as a gift to celebrate my friend in style.
-
-                        Born from late-night coding sessions and a love for building something special, it’s a sleek, luxurious escape. It’s more than a site—it’s a personal digital keepsake designed to wow.</p>
+                    <h3>The XO Store !</h3>
+                    <p>
+                        The ✘󠁅'𝑶 Store - The Weeknd Official Merchandise Store
+                        <br><br>
+                        A modern, full-stack e-commerce platform for The Weeknd's official merchandise, featuring exclusive apparel and music collections from albums like "Hurry Up Tomorrow" and "After Hours".</p>
                     <div class="tech-stack">
                         
-                        <span><i class="fa-brands fa-react"></i>React.js</span>
-                        <span><i class="fa-solid fa-code"></i>TypeScript</span>
-                        <span><i class="fa-brands fa-css3-alt"></i>Tailwind CSS</span>
-                        <span><i class="fa-solid fa-video"></i>Framer Motion</span>
-                        <span><i class="fa-solid fa-magic"></i>particles.js</span>
+                            <span><i class="fa-brands fa-react"></i>React</span>
+                            <span><i class="fa-solid fa-bolt"></i>Vite</span>
+                            <span><i class="fa-brands fa-css3-alt"></i>Tailwind CSS</span>
+                            <span><i class="fa-solid fa-database"></i>MongoDB</span>
+                            <span><i class="fa-brands fa-node-js"></i>Node.js</span>
+                            <span><i class="fa-solid fa-server"></i>Express.js</span>
+                            <span><i class="fa-brands fa-stripe"></i>Stripe</span>
+                            <span><i class="fa-solid fa-key"></i>Auth0</span>
+                            <span><i class="fa-solid fa-cloud"></i>Cloudinary</span>
+                            
                     </div>
                     <div class="project-links">
-                        <a href="https://my-present.vercel.app/" class="btn proj" target="_blank"><i class="fa-solid fa-rss"></i>Live</a>
-                        <a href="https://github.com/irfan-rg/merch" class="btn proj" target="_blank"><i class="fab fa-github"></i>GitHub</a>
+                        <a href="https://thexostore.vercel.app" class="btn proj" target="_blank"><i class="fa-solid fa-rss"></i>Live</a>
+                        <a href="https://github.com/irfan-rg/the-xo-store" class="btn proj" target="_blank"><i class="fab fa-github"></i>GitHub</a>
                     </div>
                 </div>
             </article>
@@ -435,13 +465,20 @@
             <article class="project-card">
                 <div class="project-info">
                     <h3>F1 Race Winner Predictor 🏁</h3>
-                    <p>This project harnesses machine learning to predict Formula 1 race Winners using Historical Data and Real-Time Qualifying results.
-                        <br>
-                        <br>
-                        It’s built for F1 enthusiasts and data science fans who want to explore predictive analytics in motorsport.</p>
+                    <p>
+                        This project leverages Live Data and Predictive Algorithms to predict Formula 1 race Winners.
+                        <br><br>
+                        Using Python, the OpenF1 API, and some clever heuristics, this tool analyses driver performance, grid positions, and team strengths to deliver dynamic win probabilities.
+                        <!-- <br><br>
+                        It’s built for F1 enthusiasts and data science fans who want to explore predictive analytics in motorsport. -->
+                    </p>
                     <div class="tech-stack">
                         <span><i class="fa-brands fa-python"></i>Python</span>
                         <span><i class="fa-solid fa-database"></i>Database</span>
+                        <span><i class="fa-solid fa-wrench"></i>OpenF1 API</span>
+                        <span><i class="fa-solid fa-chart-line"></i>Machine Learning</span>
+                        
+                       
                     </div>
                     <div class="project-links">
                         <a href="https://github.com/irfan-rg/f1-predictor" class="btn proj" target="_blank"><i class="fa-solid fa-rss"></i>Live</a>

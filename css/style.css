@@ -334,7 +334,7 @@ h2 {
     position: relative;
     margin-right: 40px;
     margin-top: -50px;
-    width: 450px;
+    width: 580px;
     height: 320px;
 }
 
@@ -471,7 +471,7 @@ h2 {
     .terminal-anim {
         margin-right: 0;
         margin-top: 0; /* Reset negative margin */
-        width: 350px; /* Reduce width */
+        width: 425px; /* Reduce width */
         height: 280px; /* Reduce height proportionally */
     }
 
@@ -509,7 +509,7 @@ h2 {
     }
 
     .terminal-anim {
-        width: 280px; /* Further reduce width */
+        width: 340px; /* Further reduce width */
         height: 220px; /* Proportional height */
     }
 
@@ -547,7 +547,7 @@ h2 {
         min-height: 300px;
     }
     .terminal-anim {
-        width: 300px;
+        width: 365px;
         height: 200px;
     }
 } */
