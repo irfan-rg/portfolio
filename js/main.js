@@ -6,11 +6,30 @@ themeToggle.addEventListener('click', () => {
     body.dataset.theme = body.dataset.theme === 'dark' ? 'light' : 'dark';
     localStorage.setItem('theme', body.dataset.theme);
     updateThemeIcon();
+    // Update navbar styling immediately on theme change
+    updateNavbarStyle();
 });
 
 function updateThemeIcon() {
     const icon = themeToggle.querySelector('i');
     icon.className = body.dataset.theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+}
+
+// Update navbar styling based on scroll position and current theme
+function updateNavbarStyle() {
+    const navbar = document.querySelector('.navbar');
+    if (!navbar) return;
+    
+    const isDark = document.body.dataset.theme === 'dark';
+    const isScrolled = window.scrollY > 100;
+    
+    if (isScrolled) {
+        navbar.style.background = isDark ? 'rgba(0, 0, 0, 0.95)' : 'rgba(255, 255, 255, 0.95)';
+        navbar.style.backdropFilter = 'blur(10px)';
+    } else {
+        navbar.style.background = '';
+        navbar.style.backdropFilter = '';
+    }
 }
 
 // Load saved theme
@@ -234,18 +253,7 @@ window.addEventListener('resize', () => {
 });
 
 // Navbar scroll effect
-window.addEventListener('scroll', () => {
-    const navbar = document.querySelector('.navbar');
-    const isDark = document.body.dataset.theme === 'dark';
-    
-    if (window.scrollY > 100) {
-        navbar.style.background = isDark ? 'rgba(0, 0, 0, 0.95)' : 'rgba(255, 255, 255, 0.95)';
-        navbar.style.backdropFilter = 'blur(10px)';
-    } else {
-        navbar.style.background = 'var(--bg-primary)';
-        navbar.style.backdropFilter = 'none';
-    }
-});
+window.addEventListener('scroll', updateNavbarStyle);
 
 // Active section highlighting
 window.addEventListener('scroll', () => {

@@ -14,6 +14,14 @@ Welcome to my personal portfolio website! This is where I showcase my skills and
 - **About Me Section**: Provides a brief introduction to who I am, my background, and my skills.
 - **Contact Information**: Easy ways to reach out and connect with me.
 
+## Skill Reorganization Todo
+
+- Cluster core languages under `Core Programming` for quicker scanning.
+- Consolidate UI technologies into the `Frontend Engineering` band.
+- Align database and analytics stacks within `Data Platforms` and ML tracks.
+- Separate deployment tooling into the `Cloud & Deployment` lane.
+- Break out security-centric abilities into `Security & Networks` for clarity.
+
 ## Technologies Used
 
 - **HTML5**: For building the structure of the webpage.
@@ -23,7 +31,7 @@ Welcome to my personal portfolio website! This is where I showcase my skills and
   
 ## How to View
 
-Live Deployed Link: 
+Live Deployed Link: https://irfanrg.vercel.app/
 
 ## Contact Me
 
@@ -31,4 +39,4 @@ If you'd like to get in touch, please feel free to reach out:
 
 - Email: irfanrgulagundi@gmail.com
 - GitHub: https://github.com/irfan-rg
-- LinkedIn: www.linkedin.com/in/irfanrg
+- LinkedIn: https://www.linkedin.com/in/irfanrg/
