@@ -1,20 +1,30 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Irfan G - Portfolio
 
-# Run and deploy your AI Studio app
+Welcome to my personal portfolio website. I am a Full-Stack Engineer specializing in the modern JavaScript ecosystem (React, Next.js, Node.js) and AI integration. This site showcases my projects, technical skills, and professional journey.
 
-This contains everything you need to run your app locally.
+## Tech Stack
 
-View your app in AI Studio: https://ai.studio/apps/drive/1tjD7ZCvP1YB6I4v-1PUs56hEBVMgvk9n
+This portfolio is built with performance and aesthetics in mind:
 
-## Run Locally
+*   **Frontend:** React 19, TypeScript, Tailwind CSS
+*   **Animations:** Custom Canvas Ripple Effect, CSS transitions
+*   **Icons:** Lucide React
+*   **Design System:** Glassmorphism, Bento Grid Layout, Dark Mode (Titanium Theme)
 
-**Prerequisites:**  Node.js
+## Selected Projects
 
+*   **Caliber:** AI Agent Evaluation Platform (Next.js, Supabase, Vector Search)
+*   **Inkwell:** Full-Stack Blogging Platform (tRPC, Drizzle ORM)
+*   **The XO Store:** Official Merch Store for The Weeknd (MERN Stack, Stripe)
+*   **F1 Race Predictor:** ML-Based Prediction System (Python, Scikit-learn)
+*   **Qube AI:** High-performance Chatbot (Groq API, Llama 3.3)
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Contact
+
+*   **Email:** irfanrgulagundi@gmail.com
+*   **GitHub:** [github.com/irfan-rg](https://github.com/irfan-rg)
+*   **LinkedIn:** [linkedin.com/in/irfanrg](https://www.linkedin.com/in/irfanrg)
+*   **Location:** Bangalore, India
+
+---
+© 2025 Irfan G. All rights reserved.
