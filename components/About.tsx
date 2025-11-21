@@ -22,8 +22,8 @@ const About: React.FC = () => {
              <div className="h-full min-h-[350px] md:min-h-[450px] w-full relative rounded-3xl overflow-hidden border border-white/10 group">
                 <div className="absolute inset-0 bg-zinc-900">
                    <img 
-                    src="public/images/profile.jpg"
-                    onError={(e) => {e.currentTarget.src = '/public/images/memoji3.png';}}
+                    src="/images/profile.jpg"
+                    onError={(e) => {e.currentTarget.src = '/images/memoji3.png';}}
                     alt="Irfan" 
                     className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100" 
                    />

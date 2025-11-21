@@ -14,7 +14,7 @@ export const SOCIAL_LINKS: SocialLink[] = [
   { platform: 'GitHub', url: 'https://github.com/irfan-rg', icon: Github },
   { platform: 'LinkedIn', url: 'https://www.linkedin.com/in/irfanrg', icon: Linkedin },
   { platform: 'Email', url: 'mailto:irfanrgulagundi@gmail.com', icon: Mail },
-  { platform: 'Resume', url: '/public/irfan-resume.pdf', icon: FileText },
+  { platform: 'Resume', url: '/images/irfan-resume.pdf', icon: FileText },
 ];
 
 export const INTERESTS = [
@@ -34,7 +34,7 @@ export const PROJECTS: Project[] = [
     githubUrl: "https://github.com/irfan-rg/caliber",
     category: "AI Engineering",
     highlight: true,
-    image: "/public/projects/caliber.png"
+    image: "/projects/caliber.png"
   },
   {
     title: "Inkwell",
@@ -43,7 +43,7 @@ export const PROJECTS: Project[] = [
     liveUrl: "https://inkwelll.vercel.app/",
     githubUrl: "https://github.com/irfan-rg/inkwell",
     category: "Full Stack",
-    image: "/public/projects/inkwell.png"
+    image: "/projects/inkwell.png"
   },
   {
     title: "The XO Store",
@@ -53,7 +53,7 @@ export const PROJECTS: Project[] = [
     githubUrl: "https://github.com/irfan-rg/the-xo-store",
     category: "E-Commerce",
     highlight: true,
-    image: "/public/projects/the-xo-store.png"
+    image: "/projects/the-xo-store.png"
   },
   {
     title: "F1 Race Predictor",
@@ -62,7 +62,7 @@ export const PROJECTS: Project[] = [
     liveUrl: "#",
     githubUrl: "https://github.com/irfan-rg/f1-predictor",
     category: "Data Science",
-    image: "/public/projects/f1.png"
+    image: "/projects/f1.png"
   },
   {
     title: "Qube AI",
@@ -71,7 +71,7 @@ export const PROJECTS: Project[] = [
     liveUrl: "https://qube-chat.vercel.app/",
     githubUrl: "https://github.com/irfan-rg/qube-ai",
     category: "AI/ML",
-    image: "/public/projects/qube.png"
+    image: "/projects/qube.png"
   },
   {
     title: "Birthday Present",
@@ -80,7 +80,7 @@ export const PROJECTS: Project[] = [
     liveUrl: "https://my-present.vercel.app/",
     githubUrl: "https://github.com/irfan-rg/present",
     category: "Creative",
-    image: "/public/projects/present.png"
+    image: "/projects/present.png"
   }
 ];
 
