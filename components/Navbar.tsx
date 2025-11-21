@@ -55,7 +55,7 @@ const Navbar: React.FC = () => {
             {scrolled && <div className="h-4 w-[1px] bg-white/10 mr-2"></div>}
 
             <a 
-               href="/images/irfan-resume.pdf" 
+               href="/irfan-resume.pdf" 
                target="_blank"
                className="group px-4 py-2 text-xs font-semibold bg-white text-black rounded-full hover:bg-zinc-200 transition-all active:scale-95 flex items-center gap-1"
              >
@@ -91,7 +91,7 @@ const Navbar: React.FC = () => {
             </a>
          ))}
           <a 
-             href="/images/irfan-resume.pdf" 
+             href="/irfan-resume.pdf" 
              target="_blank"
              className="mt-8 px-8 py-4 text-sm font-bold bg-white text-black rounded-full"
            >
