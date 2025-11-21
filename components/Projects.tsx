@@ -23,7 +23,7 @@ const Projects: React.FC = () => {
                 target="_blank"
                 className="group flex items-center gap-3 px-6 py-3 rounded-full bg-white/5 border border-white/10 hover:bg-white/10 transition-all mb-2 md:mb-0"
             >
-                <span className="font-medium">View Github</span>
+                <span className="font-semibold">View Github</span>
                 <div className="w-9 h-9 rounded-full bg-white/20 flex items-center justify-center group-hover:bg-white/30 transition-colors">
                     <Github size={18} />
                 </div>
@@ -114,7 +114,7 @@ const Projects: React.FC = () => {
 
                         <div className="pt-4 flex flex-wrap gap-2">
                             {project.tags.map(tag => (
-                                <span key={tag} className="text-sm text-gray-500 font-medium px-3 py-1.5 rounded-lg bg-white/5 border border-white/5 hover:bg-zinc-900 hover:border-zinc-900 hover:scale-105 transition-all cursor-default">
+                                <span key={tag} className="text-sm text-gray-500 font-semibold px-3 py-1.5 rounded-lg bg-white/5 border border-white/5 hover:bg-zinc-900 hover:border-zinc-900 hover:scale-105 transition-all cursor-default">
                                     {tag}
                                 </span>
                             ))}

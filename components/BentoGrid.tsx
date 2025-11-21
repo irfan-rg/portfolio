@@ -35,13 +35,14 @@ const BentoItem: React.FC<{
       
       <div className="relative h-full p-8 flex flex-col z-10">
         {/* Reverted font size to text-lg based on user feedback */}
-        <h3 className="text-sm font-bold text-zinc-500 mb-6 tracking-tight uppercase">
+        <h3 className="text-sm font-bold text-zinc-500 mb-6 tracking-tight uppercase flex items-center gap-2">
+          <span className="w-1 h-4 bg-zinc-700 rounded-full"></span>
             {title}
         </h3>
         
         <div className="flex flex-wrap gap-3 content-start">
             {skills.map(skill => (
-                <span key={skill} className="px-4 py-2 text-sm font-medium text-zinc-400 bg-white/5 rounded-full border border-white/5 group-hover:text-white group-hover:bg-white/10 group-hover:border-white/10 transition-all cursor-default">
+                <span key={skill} className="px-4 py-2 text-sm font-semibold text-zinc-400 bg-white/5 rounded-full border border-white/5 group-hover:text-white group-hover:bg-white/10 group-hover:border-white/10 transition-all cursor-default">
                     {skill}
                 </span>
             ))}
