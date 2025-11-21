@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
         <a href="#home" className="group flex items-center gap-2 relative z-50">
             <div className="w-7 h-7 bg-zinc-800 rounded-full flex items-center justify-center overflow-hidden border border-white/10 shadow-lg">
               <img 
-                src="/assets/images/memoji.png" 
+                src="/public/images/memoji.png" 
                 alt="Irfan" 
                 className="w-full h-full object-cover"
               />
