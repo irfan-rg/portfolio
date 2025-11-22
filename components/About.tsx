@@ -8,7 +8,7 @@ const About: React.FC = () => {
       <div className="max-w-6xl mx-auto px-4 md:px-6">
         
         {/* Section Header */}
-        <div className="mb-12 md:mb-16">
+        <div className="mb-8 md:mb-16">
            <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold tracking-tight text-white leading-tight">
               Behind <span className="text-zinc-600">Code.</span>
            </h2>

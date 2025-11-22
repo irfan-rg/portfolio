@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { PROJECTS } from '../constants';
 import { Github, ExternalLink } from 'lucide-react';
@@ -35,6 +34,25 @@ const Projects: React.FC = () => {
         <div className="space-y-20 md:space-y-32">
             {PROJECTS.map((project, index) => (
                 <div key={index} className="group grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 items-center">
+                    
+                    {/* MOBILE ONLY: Title and Category First */}
+                    <div className="lg:hidden space-y-3 -mb-4">
+                        <h3 className="text-2xl sm:text-3xl font-bold text-white">
+                            {project.title}
+                        </h3>
+                        
+                        <div className="flex items-center gap-2 flex-wrap">
+                            <span className="px-2.5 py-1 rounded-full border border-white/10 bg-white/5 text-[10px] font-mono text-blue-400 tracking-wider uppercase">
+                                {project.category}
+                            </span>
+                            {project.highlight && (
+                                <span className="px-2.5 py-1 rounded-full border border-purple-500/30 bg-purple-500/10 text-[10px] font-mono text-purple-400 tracking-wider uppercase">
+                                    Featured
+                                </span>
+                            )}
+                        </div>
+                    </div>
+
                     {/* Project Visual - Cinematic Window Style */}
                     <div className={`
                         lg:col-span-7 relative rounded-2xl md:rounded-3xl overflow-hidden bg-[#0a0a0a] border border-white/10 aspect-[16/9] flex flex-col
@@ -109,7 +127,9 @@ const Projects: React.FC = () => {
 
                     {/* Project Info */}
                     <div className={`lg:col-span-5 -mt-4 ${index % 2 === 0 ? 'lg:order-2' : 'lg:order-1'} space-y-4 md:space-y-6`}>
-                        <div className="flex items-center gap-2 md:gap-3 flex-wrap">
+                        
+                        {/* DESKTOP ONLY: Category badges */}
+                        <div className="hidden md:flex items-center gap-2 md:gap-3 flex-wrap">
                             <span className="px-2.5 md:px-3 py-1 rounded-full border border-white/10 bg-white/5 text-[10px] md:text-xs font-mono text-blue-400 tracking-wider uppercase">
                                 {project.category}
                             </span>
@@ -120,14 +140,17 @@ const Projects: React.FC = () => {
                             )}
                         </div>
                         
-                        <h3 className="text-2xl sm:text-3xl md:text-5xl font-bold text-white group-hover:text-white transition-colors duration-500">
+                        {/* DESKTOP ONLY: Title */}
+                        <h3 className="hidden md:block text-2xl sm:text-3xl md:text-5xl font-bold text-white group-hover:text-white transition-colors duration-500">
                             {project.title}
                         </h3>
                         
+                        {/* Description - shows on both mobile and desktop */}
                         <p className="text-sm md:text-base font-medium text-gray-400 max-w-5xl mx-1 md:mx-2 leading-relaxed border-l-2 border-white/10 pl-4 md:pl-6">
                             {project.description}
                         </p>
 
+                        {/* Tags - shows on both mobile and desktop */}
                         <div className="pt-2 md:pt-4 flex flex-wrap gap-2">
                             {project.tags.map(tag => (
                                 <span key={tag} className="text-xs md:text-base text-gray-500 font-semibold px-2.5 md:px-3 py-1 md:py-1.5 rounded-lg bg-white/5 border border-white/5 hover:bg-zinc-900 hover:border-zinc-900 hover:scale-105 transition-all cursor-default">
