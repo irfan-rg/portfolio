@@ -271,10 +271,16 @@ const Hero: React.FC = () => {
           </p>
 
           <div className="flex flex-row sm:flex-row items-stretch sm:items-center gap-3 md:gap-4">
-            <a href="#projects" className="px-3 sm:px-8 py-2 md:py-4 bg-white text-black text-xs md:text-base font-bold rounded-full hover:bg-zinc-200 transition-colors text-center">
+            <a 
+              href="#projects" 
+              className="px-3 sm:px-8 py-2 md:py-4 bg-white text-black text-xs md:text-base font-bold rounded-full hover:bg-zinc-200 transition-colors text-center border border-white"
+            >
               View Projects
             </a>
-            <a href="#contact" className="px-3 sm:px-8 py-2 md:py-4 bg-transparent border border-white/20 text-white text-xs md:text-base font-medium rounded-full hover:bg-white/5 transition-colors text-center">
+            <a 
+              href="#contact" 
+              className="px-3 sm:px-8 py-2 md:py-4 bg-transparent border border-white/20 text-white text-xs md:text-base font-bold rounded-full hover:bg-white/5 transition-colors text-center"
+            >
               Contact Me
             </a>
           </div>
