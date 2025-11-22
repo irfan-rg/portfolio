@@ -75,9 +75,9 @@ const Terminal: React.FC = () => {
   }, []);
 
   return (
-    <div className="w-full max-w-md rounded-lg overflow-hidden bg-[#09090b] border border-white/10 shadow-2xl font-mono text-sm relative z-20">
+    <div className="w-full max-w-[340px] sm:max-w-md rounded-lg overflow-hidden bg-[#09090b] border border-white/10 shadow-2xl font-mono text-xs sm:text-sm relative z-20">
       {/* Terminal Header - Monochrome */}
-      <div className="h-8 bg-[#18181b] flex items-center px-4 border-b border-white/5">
+      <div className="h-7 sm:h-8 bg-[#18181b] flex items-center px-3 sm:px-4 border-b border-white/5">
         <div className="flex gap-2">
           <div className="w-3 h-3 rounded-full bg-zinc-600"></div>
           <div className="w-3 h-3 rounded-full bg-zinc-700"></div>
@@ -87,7 +87,7 @@ const Terminal: React.FC = () => {
       </div>
 
       {/* Terminal Body */}
-      <div className="p-4 bg-black/80 backdrop-blur h-[280px] overflow-y-auto text-zinc-300 font-mono custom-scrollbar">
+      <div className="p-3 sm:p-4 bg-black/80 backdrop-blur h-[260px] sm:h-[280px] overflow-y-auto text-zinc-300 font-mono custom-scrollbar">
         {lines.map((line, index) => (
           <div key={line.id} className="mb-2 min-h-[20px]">
             {line.type === 'command' ? (
@@ -114,7 +114,7 @@ const Terminal: React.FC = () => {
       </div>
 
       {/* Status Bar */}
-      <div className="h-6 bg-[#18181b] border-t border-white/5 flex items-center justify-between px-3 text-[10px] text-zinc-500 uppercase tracking-wider">
+      <div className="h-5 sm:h-6 bg-[#18181b] border-t border-white/5 flex items-center justify-between px-2 sm:px-3 text-[9px] sm:text-[10px] text-zinc-500 uppercase tracking-wider">
         <span>bash</span>
         <div className="flex items-center gap-2">
            <span className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse"></span>
@@ -249,7 +249,7 @@ const Hero: React.FC = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} id="home" className="relative min-h-screen w-full bg-black overflow-hidden flex items-center justify-center py-32 px-6 md:px-12">
+    <section ref={sectionRef} id="home" className="relative min-h-screen w-full bg-black overflow-hidden flex items-center justify-center pt-32 pb-20 md:py-32 px-4 md:px-12">
       
       {/* Interactive Canvas Background */}
       <canvas 
@@ -257,24 +257,24 @@ const Hero: React.FC = () => {
         className="absolute inset-0 z-0 cursor-crosshair"
       />
 
-      <div className="max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
+      <div className="max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center relative z-10">
         
         {/* Left Content: Text */}
         <div className={`transition-all duration-1000 transform ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
           
-          <h1 className="text-5xl md:text-7xl font-bold text-white tracking-tighter leading-[1.2] mb-6">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white tracking-tighter leading-[1.2] mb-4 md:mb-6">
             Turning Ideas <br/>
-            <span className="text-zinc-500 mx-3">Into Code.</span>
+            <span className="text-zinc-500 mx-1 md:mx-3">Into Code.</span>
           </h1>
-          <p className="text-lg font-medium text-zinc-400 mx-3 leading-relaxed max-w-lg mb-10">
+          <p className="text-base md:text-lg font-medium text-zinc-400 mx-1 md:mx-3 leading-relaxed max-w-lg mb-8 md:mb-10">
             Full-Stack Developer. <br />I build <span className="font-bold">clean, responsive,</span> and <span className="font-bold">modern</span> web applications.
           </p>
 
-          <div className="flex items-center gap-4">
-            <a href="#projects" className="px-8 py-4 bg-white text-black font-bold rounded-full hover:bg-zinc-200 transition-colors">
+          <div className="flex flex-row sm:flex-row items-stretch sm:items-center gap-3 md:gap-4">
+            <a href="#projects" className="px-3 sm:px-8 py-2 md:py-4 bg-white text-black text-xs md:text-base font-bold rounded-full hover:bg-zinc-200 transition-colors text-center">
               View Projects
             </a>
-            <a href="#contact" className="px-8 py-4 bg-transparent border border-white/20 text-white font-medium rounded-full hover:bg-white/5 transition-colors">
+            <a href="#contact" className="px-3 sm:px-8 py-2 md:py-4 bg-transparent border border-white/20 text-white text-xs md:text-base font-medium rounded-full hover:bg-white/5 transition-colors text-center">
               Contact Me
             </a>
           </div>

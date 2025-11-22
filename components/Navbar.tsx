@@ -15,24 +15,24 @@ const Navbar: React.FC = () => {
 
   return (
     <>
-      <div className="fixed top-6 left-0 right-0 z-50 flex justify-center px-4">
+      <div className="fixed top-4 md:top-6 left-0 right-0 z-50 flex justify-center px-3 md:px-4">
         <nav 
           className={`
             transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)]
-            ${scrolled ? 'w-full max-w-2xl py-2 pl-6 pr-2 bg-[#09090b]/80 backdrop-blur-md border border-white/10 shadow-2xl' : 'w-full max-w-7xl py-6 bg-transparent border-transparent'}
+            ${scrolled ? 'w-full max-w-2xl py-2 pl-4 md:pl-6 pr-2 bg-[#09090b]/80 backdrop-blur-md border border-white/10 shadow-2xl' : 'w-full max-w-7xl py-4 md:py-6 bg-transparent border-transparent'}
             flex items-center justify-between rounded-full
           `}
         >
           {/* Logo Area */}
           <a href="#home" className="group flex items-center gap-2 relative z-50">
-              <div className="w-8 h-8 bg-zinc-800 rounded-full flex items-center justify-center overflow-hidden border border-white/10 shadow-lg">
+              <div className="w-7 h-7 md:w-8 md:h-8 bg-zinc-800 rounded-full flex items-center justify-center overflow-hidden border border-white/10 shadow-lg">
                 <img 
                   src="/images/memoji.png" 
                   alt="Irfan" 
                   className="w-full h-full object-cover"
                 />
               </div>
-              <span className={`font-semibold tracking-tight transition-colors duration-300 ${scrolled ? 'text-white' : 'text-white'}`}>
+              <span className={`font-semibold text-sm md:text-base tracking-tight transition-colors duration-300 ${scrolled ? 'text-white' : 'text-white'}`}>
                 Irfan
               </span>
           </a>
@@ -67,16 +67,17 @@ const Navbar: React.FC = () => {
           {/* Mobile Toggle */}
           <button 
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden p-2 text-white z-50 relative"
+            className="md:hidden p-2 text-white z-50 relative active:scale-95 transition-transform"
+            aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
           >
-            {mobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
+            {mobileMenuOpen ? <X size={22} /> : <Menu size={22} />}
           </button>
         </nav>
       </div>
 
       {/* Full Screen Mobile Menu */}
       <div className={`
-        fixed inset-0 bg-black z-40 flex flex-col items-center justify-center gap-8 transition-all duration-500
+        fixed inset-0 bg-black z-40 flex flex-col items-center justify-center gap-6 md:gap-8 transition-all duration-500 px-6
         ${mobileMenuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 pointer-events-none -translate-y-10'}
       `}>
          {NAV_LINKS.map((link, idx) => (
@@ -84,7 +85,7 @@ const Navbar: React.FC = () => {
               key={link.name}
               href={link.href}
               onClick={() => setMobileMenuOpen(false)}
-              className="text-3xl font-bold text-zinc-400 hover:text-white transition-colors"
+              className="text-2xl sm:text-3xl font-bold text-zinc-400 hover:text-white active:text-white transition-colors"
               style={{ transitionDelay: `${idx * 50}ms` }}
             >
               {link.name}
@@ -93,7 +94,7 @@ const Navbar: React.FC = () => {
           <a 
              href="/irfan-resume.pdf" 
              target="_blank"
-             className="mt-8 px-8 py-4 text-sm font-bold bg-white text-black rounded-full"
+             className="mt-6 sm:mt-8 px-8 py-4 text-sm font-bold bg-white text-black rounded-full active:scale-95 transition-transform"
            >
              Download Resume
            </a>
