@@ -27,23 +27,23 @@ export const INTERESTS = [
 
 export const PROJECTS: Project[] = [
   {
-    title: "Caliber",
-    description: "AI Agent Evaluation Platform benchmarking agents with 60-70% faster evaluation cycles. Integrated RAG-style flows using structured prompts & vector search, improving query accuracy by ~30%.",
-    tags: ["Next.js", "Supabase", "PostgreSQL", "TypeScript", "ShadCN UI"],
-    liveUrl: "https://caliber-ai.vercel.app/",
-    githubUrl: "https://github.com/irfan-rg/caliber",
-    category: "AI Engineering",
-    highlight: true,
-    image: "/projects/caliber.png"
-  },
-  {
     title: "Inkwell",
     description: "Full-Stack Blogging Platform with a type-safe backend (tRPC + Drizzle) reducing API response time by ~43%. Enables creators to publish content 50% faster via a streamlined CMS workflow.",
     tags: ["Next.js", "tRPC", "Drizzle ORM", "Supabase", "Tailwind"],
     liveUrl: "https://inkwelll.vercel.app/",
     githubUrl: "https://github.com/irfan-rg/inkwell",
     category: "Full Stack",
+    highlight: true,
     image: "/projects/inkwell.png"
+  },
+  {
+    title: "Caliber",
+    description: "AI Agent Evaluation Platform benchmarking agents with 60-70% faster evaluation cycles. Integrated RAG-style flows using structured prompts & vector search, improving query accuracy by ~30%.",
+    tags: ["Next.js", "Supabase", "PostgreSQL", "TypeScript", "ShadCN UI"],
+    liveUrl: "https://caliber-ai.vercel.app/",
+    githubUrl: "https://github.com/irfan-rg/caliber",
+    category: "AI Engineering",
+    image: "/projects/caliber.png"
   },
   {
     title: "The XO Store",
