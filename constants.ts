@@ -27,59 +27,69 @@ export const INTERESTS = [
 
 export const PROJECTS: Project[] = [
   {
+    title: "The Swift Dictionary",
+    description: "A full-stack lexical product that transforms Taylor Swift lyrics into a searchable vocabulary engine across all 12 eras. Includes dictionary filters, era/song exploration, Word of the Day, and saved words with Supabase Auth + RLS.",
+    tags: ["Next.js 15", "TypeScript", "Supabase", "Tailwind CSS", "Framer Motion", "Python"],
+    liveUrl: "https://the-swift-dictionary.me/",
+    githubUrl: "https://github.com/irfan-rg/the-swift-dictionary",
+    category: "Content Platform",
+    highlight: true,
+    image: "/projects/the-swift-dictionary.png"
+  },
+  {
     title: "Inkwell",
-    description: "Full-Stack Blogging Platform with a type-safe backend (tRPC + Drizzle) reducing API response time by ~43%. Enables creators to publish content 50% faster via a streamlined CMS workflow.",
+    description: "A creator-first CMS platform for publishing and managing long-form content with a type-safe tRPC + Drizzle backend. Optimized editorial workflows and reduced API latency by ~43% for faster content shipping.",
     tags: ["Next.js", "tRPC", "Drizzle ORM", "Supabase", "Tailwind"],
     liveUrl: "https://inkwelll.vercel.app/",
     githubUrl: "https://github.com/irfan-rg/inkwell",
-    category: "Full Stack",
+    category: "CMS Platform",
     highlight: true,
     image: "/projects/inkwell.png"
   },
   {
     title: "Caliber",
-    description: "AI Agent Evaluation Platform benchmarking agents with 60-70% faster evaluation cycles. Integrated RAG-style flows using structured prompts & vector search, improving query accuracy by ~30%.",
+    description: "An AI agent evaluation platform for benchmarking prompt chains and response quality at scale. Built repeatable scoring workflows that accelerated evaluation cycles by 60-70% and improved retrieval accuracy by ~30%.",
     tags: ["Next.js", "Supabase", "PostgreSQL", "TypeScript", "ShadCN UI"],
     liveUrl: "https://caliber-ai.vercel.app/",
     githubUrl: "https://github.com/irfan-rg/caliber",
-    category: "AI Engineering",
+    category: "AI Platform",
     image: "/projects/caliber.png"
   },
   {
     title: "The XO Store",
-    description: "The Weeknd's Official Merchandise Store. Implemented secure checkout with Stripe & Auth0, achieving a 100% successful test transaction rate and reducing login flow time by 25%.",
+    description: "A production-style merchandise storefront focused on conversion and trust. Integrated Stripe checkout, Auth0 identity, and media handling to deliver reliable transactions and a polished buying journey.",
     tags: ["React", "Node.js", "MongoDB", "Stripe", "Auth0", "Cloudinary"],
     liveUrl: "https://thexostore.vercel.app",
     githubUrl: "https://github.com/irfan-rg/the-xo-store",
-    category: "E-Commerce",
+    category: "Commerce",
     highlight: true,
     image: "/projects/the-xo-store.png"
   },
   {
     title: "F1 Race Predictor",
-    description: "ML-Based Prediction System utilizing historical data and real-time qualifying results. Trained a regression model on 5+ seasons of F1 data, achieving ~82% prediction accuracy.",
+    description: "A race outcome prediction system combining historical Formula 1 performance data with real-time qualifying signals. Built a multi-season ML training workflow and reached ~82% prediction accuracy.",
     tags: ["Python", "Scikit-learn", "OpenF1 API", "Pandas"],
     liveUrl: "#",
     githubUrl: "https://github.com/irfan-rg/f1-predictor",
-    category: "Data Science",
+    category: "ML Analytics",
     image: "/projects/f1.png"
   },
   {
     title: "Qube AI",
-    description: "Lightning-fast iOS-style chatbot powered by Groq and Llama 3.3 70B. Handles up to 14k requests/day with a sleek UI.",
+    description: "A low-latency conversational AI app engineered for speed and throughput. Integrated Groq-hosted Llama models with lightweight backend orchestration to support up to 14k requests per day.",
     tags: ["Node.js", "Express", "Groq Cloud API", "HTML/CSS"],
     liveUrl: "https://qube-chat.vercel.app/",
     githubUrl: "https://github.com/irfan-rg/qube-ai",
-    category: "AI/ML",
+    category: "AI Product",
     image: "/projects/qube.png"
   },
   {
     title: "Birthday Present",
-    description: "A digital keepsake designed with complex animations and physics interactions to celebrate a special occasion.",
+    description: "An interactive web storytelling piece built as a digital keepsake, blending cinematic motion and playful physics for emotional impact. Designed custom scene choreography for an immersive experience.",
     tags: ["React", "TypeScript", "Framer Motion", "Particles.js"],
     liveUrl: "https://my-present.vercel.app/",
     githubUrl: "https://github.com/irfan-rg/present",
-    category: "Creative",
+    category: "Interactive Experience",
     image: "/projects/present.png"
   }
 ];
